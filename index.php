@@ -17,14 +17,14 @@
   
       <!-- Icon -->
       <div class="fadeIn first">
-        <img src="img/apmt.jpg" id="icon" alt="User Icon" />
+        <img src="img/apmt.jpg" id="icon" alt="User Icon"/>
         <h4>Sistema de Archivos</h4>
       </div>
   
       <!-- Login Form -->
-      <form>
-        <input type="text" id="login" class="fadeIn second" name="login" placeholder="username">
-        <input type="password" id="password" class="fadeIn third" name="login" placeholder="password">
+      <form method="post" id="frmLogin" onsubmit="return logear()">
+        <input type="text" id="login" class="fadeIn second" name="login" placeholder="username" required="">
+        <input type="password" id="password" class="fadeIn third" name="password" placeholder="password" required="">
         <input type="submit" class="fadeIn fourth" value="Ingresar">
       </form>
   
@@ -35,6 +35,28 @@
       </div>
     </div>
 </div>
+<script src="librerias/jquery-3.6.0.min.js"></script>
 <script src="librerias/sweetalert.min.js"></script>  
+<script type="text/javascript">
+    function logear (){
+        $.ajax({
+            type:"POST",
+            data:$('#frmLogin').serialize(),
+            url:"procesos/usuario/login/login.php",
+            success:function(respuesta) {
+                alert (respuesta);
+                respuesta = respuesta.trim();
+                
+                if (respuesta == 1) {
+                    window.location = "view/inicio.php";
+                } else {
+                    swal(":(", "Fallo al Entrar!!", "Error")
+                }
+            }
+        });
+        return false;
+    }
+
+</script>
 </body>
 </html>
