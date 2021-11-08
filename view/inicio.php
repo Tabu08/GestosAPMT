@@ -1,4 +1,18 @@
-<?php include "header.php" ; ?>
+<?php
+    session_start();
+    if (isset($_SESSION['usuario'])){
+        include "header.php";
+?>
+        <div class="container">
+            <div class="row">
+                <div class = "col-sm-12">
 
-
-<?php include "footer.php" ; ?>
+                </div>
+            </div>
+        </div>
+    <?php
+        include "footer.php";
+    } else {
+        header("location:../index.php");
+    }
+?>

@@ -1,4 +1,11 @@
 <?php
-    print_r ($_POST);
+    session_start();
+    include_once "../../../clases/Usuario.php";
 
+    $usuario = $_POST['login'];
+    $password = sha1( $_POST['password']);
+
+    $usuarioObj = new Usuario();
+
+    echo $usuarioObj->login($usuario, $password)
 ?>
