@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../prueba/bootstrap4/css/bootstrap.min.css">          
     <link rel="stylesheet" href="../prueba/jqueryUI/jquery-ui-1.12.1/jquery-ui.min.css"> 
 </head>
-<body>
+<body style="background-color: #e9ecef">
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
     <div class="container">
@@ -31,7 +31,7 @@
           <a class="nav-link active" aria-current="page" href="categorias.php"> <span class="far fa-list-alt"></span> Categorias</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="gestor.php"><span class="far fa-folder-open"></span> Administrar</a>
+          <a class="nav-link " href="gestor.php"><span class="far fa-folder-open"></span> Archivos</a>
         </li>
         
         <li class="nav-item">
