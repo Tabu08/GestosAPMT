@@ -41,12 +41,10 @@
         public function actualizarCategoria($datos){
             $conexion = Conectar::conexion();
 
-            $sql = "UPDATE t_categoria 
-                    SET nombre = ? 
-                    WHERE id_categoria = ?";
+            $sql = "UPDATE t_categoria SET nombre = ? WHERE id_categoria = ?";
             $query = $conexion->prepare($sql);
-            $query->bind_param("si", $datos['categoria'], 
-                                     $datos['idCategoria']);
+            $query->bind_param("si", $datos['categoria'], $datos['idCategoria']);
+            
             $respuesta = $query->execute();
             $query->close();
             return $respuesta;

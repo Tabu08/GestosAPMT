@@ -15,7 +15,7 @@
             $idCategoria = $mostrar['id_categoria'];
        
     ?>
-        <option value="<?php echo $idCategoria ?>"> <?php echo $mostrar['nombre']; ?> </option>
+        <option value="<?php echo $idCategoria; ?>"> <?php echo $mostrar['nombre']; ?> </option>
     <?php
         }
     ?>

@@ -67,20 +67,20 @@
                 url: "procesos/usuario/registro/agregarUsuario.php",
                 success:function(respuesta){
                     respuesta = respuesta.trim();
-                    //echo 'respuesta';
-                    if (respuesta == 1) {
+
+                    if(respuesta == 1) {
                         $("#frmRegistro")[0].reset();
-                        swal(":D","Agree con Exito","success");
-                    }else if(respuesta == 2) { 
+                        swal(":D","Agregado con Exito!","success");
+                    } else { 
+                        if(respuesta == 2) { 
                                 swal("Este Usuario ya Existe, ingrese un nuevo usuario");
-                    } else {
-                        swal(":(","Agree Error","Error");
-                    }
-                }
+                        } else {
+                                swal(":(","Agree Error","Error");
+                        }
+                    } 
+                }  
             });
-
             return false;
-
         }
     </script>
 </body>

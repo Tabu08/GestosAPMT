@@ -9,8 +9,8 @@
     <link rel="stylesheet" type="text/css" href="../librerias/fontawesome/css/all.css">
     <link rel="stylesheet" type="text/css" href="../librerias/datatable/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" type="text/css" href="../librerias/jquery-ui-1.13.0/jquery-ui.min.css">
-    <link rel="stylesheet" href="../prueba/bootstrap4/css/bootstrap.min.css">          
-    <link rel="stylesheet" href="../prueba/jqueryUI/jquery-ui-1.12.1/jquery-ui.min.css"> 
+    <link rel="stylesheet" type="text/css" href="../prueba/bootstrap4/css/bootstrap.min.css">          
+    <link rel="stylesheet" type="text/css" href="../prueba/jqueryUI/jquery-ui-1.12.1/jquery-ui.min.css"> 
 </head>
 <body style="background-color: #e9ecef">
   <!-- Navigation -->
@@ -38,17 +38,17 @@
           <a class="nav-link " aria-current="page" href="../procesos/usuario/salir.php" style="color: red"><span class="fas fa-power-off"></span> Salir</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
         </li>
       </ul>
     </div>

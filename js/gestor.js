@@ -42,7 +42,7 @@ function eliminarArchivo(idArchivo){
                   
                 respuesta = respuesta.trim();
                 if (respuesta == 1){
-                    $('#configform')[0].reset();
+                    //$('#configform')[0].reset();
                     $('#tablaGestorArchivos').load("gestor/tablaGestor.php");
                     swal("Eliminado con Exito!", {
                         icon: "success",

@@ -2,6 +2,7 @@
     session_start();
     if (isset($_SESSION['usuario'])){
         include "header.php";
+        
 ?>
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
@@ -61,7 +62,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form id="frmActualizacionCategoria">
+                <form id="frmActualizaCategoria">
                     <input type="text" id="idCategoria", name="idCategoria" hidden="">  
                     <label >Categoria</label>
                     <input type="text" id="categoriaU", name="categoriaU" class="form-control">

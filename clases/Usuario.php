@@ -23,7 +23,7 @@
                                          $datos['password']);
                 $exito = $query->execute();
                 $query->close();
-                return $exito;
+                return $exito; 
             }
    
         }

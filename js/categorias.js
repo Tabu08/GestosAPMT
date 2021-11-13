@@ -93,6 +93,6 @@ function actualizaCategoria() {
                     swal(":(", "Fallo la Actualizacion!", "error");
                 }
             }
-        })
+        });
     }
-}
+}       

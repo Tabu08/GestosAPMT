@@ -50,7 +50,7 @@
                 if (respuesta == 1) {
                     window.location = "view/inicio.php";
                 } else {
-                    swal(":(", "Fallo al Entrar!!", "Error")
+                    swal(":(", "Fallo al Entrar!!", "Error");
                 }
             }
         });
