@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logint</title>
-    <link rel="stylesheet" href="css/login.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" text = "text/css" href="librerias/bootstrap4/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fir=no">
+    <title>Login</title>
+    <link rel="stylesheet" text="text/css" href="css/login.css">
+    <link rel="stylesheet" text="text/css" href="librerias/bootstrap4/bootstrap.min.css">
+    
 </head>
 <body>
-    
 <div class="wrapper fadeInDown">
     <div id="formContent">
       <!-- Tabs Titles -->
@@ -31,12 +30,13 @@
       <!-- Remind Passowrd -->
       <div id="formFooter">
         <a class="underlineHover" href="registro.php">Registrar Usuarios</a><br>
-        <a>(solo Administradores)</a>
+        <p>(solo Administradores)</p>
       </div>
     </div>
 </div>
 <script src="librerias/jquery-3.6.0.min.js"></script>
-<script src="librerias/sweetalert.min.js"></script>  
+<script src="librerias/sweetalert.min.js"></script> 
+
 <script type="text/javascript">
     function logear (){
         $.ajax({
@@ -58,5 +58,6 @@
     }
 
 </script>
+
 </body>
 </html>

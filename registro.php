@@ -7,6 +7,7 @@
         <link rel="stylesheet" text = "text/css" href="librerias/bootstrap4/bootstrap.min.css">
         <link rel="stylesheet" href="librerias/jquery-ui-1.13.0/jquery-ui.theme.css">
         <link rel="stylesheet" text = "text/css" href="librerias/jquery-ui-1.13.0/jquery-ui.css">
+        
     </head>
     <body>
         <div class="container">
@@ -39,10 +40,11 @@
                 <div class="col-sm-4"></div>
             </div>
         </div>
+
     <script src="librerias/jquery-3.6.0.min.js"></script>
     <script src="librerias/jquery-ui-1.13.0/jquery-ui.js"></script>
-    <script src="librerias/sweetalert.min.js"></script>    
-
+    <script src="librerias/sweetalert.min.js"></script>  
+    
     <script type= "text/javascript">
 
         $(function(){
@@ -57,9 +59,6 @@
             });
         });
 
-
-
-
         function agregarUsuarioNuevo(){
             $.ajax({
                 method: "POST",
@@ -68,16 +67,14 @@
                 success:function(respuesta){
                     respuesta = respuesta.trim();
 
-                    if(respuesta == 1) {
+                    if (respuesta == 1) {
                         $("#frmRegistro")[0].reset();
                         swal(":D","Agregado con Exito!","success");
-                    } else { 
-                        if(respuesta == 2) { 
+                    } else if(respuesta == 2) { 
                                 swal("Este Usuario ya Existe, ingrese un nuevo usuario");
                         } else {
-                                swal(":(","Agree Error","Error");
+                                swal(":(","Fallo al Agregar","Error");
                         }
-                    } 
                 }  
             });
             return false;

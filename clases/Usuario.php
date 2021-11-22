@@ -25,7 +25,6 @@
                 $query->close();
                 return $exito; 
             }
-   
         }
         
         public function buscarUsuarioRepetido($usuario) {
@@ -37,7 +36,7 @@
 
             if ($datos['usuario'] != "" || $datos['usuario'] == $usuario){
                 return 1;
-            }else {
+            } else {
                 return 0;
             }
         }
